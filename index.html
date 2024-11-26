@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51c23208df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Vedant Rane</span><br>from Maharashta, India</h1>
+            </div>
+        </div>
+    </div>
+   <!-- -----------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/p1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated computer engineering student with hands-on experience in software development.
+                        Proficient in programming languages such as React JS, HTML, CSS, C++, MS. I'm deeply passionate about cybersecurity
+                        and actively pursuing knowledge in this field to futher my expertise. Eager to contribute my technical 
+                        ans management expertise and innovative solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           <li><span>Web Development</span><br>Web app Development</li>
+                           <li><span>App Development</span><br>Building Android apps</li>
+                           <li><span>Team Management</span><br>Organized many events and now currently member of ACM Community</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                           <li><span>2021</span><br>Class 10 - Blossom Public School</li>
+                           <li><span>2023</span><br>Class 12 - CM International School</li>
+                           <li><span>2023 - Current</span><br>BE in Computer - Pimpri Chinchwad College of Engineering & Research</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services------------------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Design Web</h2>
+                    <p>Creative and detail-oriented Web Designer with hands-on experience 
+                        in creating visually appealing and user-friendly websites.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Photo editor</h2>
+                    <p>Oriented Photo Editor with hands-on experience in 
+                        enhancing and retouching images for various media platforms.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- --------------------------projects----------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project-item">
+                    <video class="project-video" autoplay loop muted>
+                        <source src="./images/Login page - Personal - Microsoft​ Edge 2024-11-21 23-59-46.mp4" type="video/mp4">
+                    </video>
+                    <h2>Login Page</h2>
+                    <p>This login page is designed using HTML and CSS, featuring a clean and responsive layout for seamless user experience. 
+                        It includes form fields for username and password, with a styled submit button for easy access.</p>
+                </div>
+                <div class="project-item">
+                    <video class="project-video" autoplay loop muted>
+                        <source src="./images/Cofee _ Shop - Personal - Microsoft​ Edge 2024-11-22 00-01-51.mp4" type="video/mp4">
+                    </video>
+                    <h2>Coffee Shop</h2>
+                    <p>This coffee store webpage is built with HTML and CSS, offering a visually appealing and user-friendly interface. 
+                        It showcases the store’s menu, and contact details in an organized and responsive design.</p>
+                </div>
+                <div class="project-item">
+                    <video class="project-video" autoplay loop muted>
+                    <source src="./images/ACMxPCCOER - Personal - Microsoft​ Edge 2024-11-21 23-34-51.mp4" type="video/mp4">
+                    </video>
+                    <h2>ACMxPCCOER</h2>
+                    <p>This ACM website is crafted using HTML and CSS, providing an intuitive and responsive layout for users to explore events, 
+                        news, and membership details. It highlights key sections like upcoming conferences, resources, and community 
+                        engagement in a clean design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+     <!-- ---------------------contact--------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact </h1>
+                    <p><i class="fa-solid fa-envelope"></i>  ranevedant05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9420066927</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/9420066927"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/vedant.2205/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vedant-rane-861a1528a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1i4GbV2csrY0hlHJsvSVno0US6AdEs-4K/view?usp=sharing" class="btn btn2">CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="center">
+                Copyright &copy; www.vedantportfolio.com. All rights reserved!
+            </div>
+        </footer>
+      </div>
+     
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWQlbHY7YkbcRSUPXFhW5gpIndDe_yvfV292bsCwDrYHwmT0InnjGWiQNdxRH4o8BH/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },4000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
